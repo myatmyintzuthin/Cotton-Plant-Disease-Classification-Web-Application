@@ -10,7 +10,9 @@ Here are the sample images of the dataset...
 # Model
 Pretrained DenseNet121 model on ImageNet dataset is used. With the help of transfer learning, I've fine-tuned only the last 8 layers of the model to solve the problem. The model is trained for 20 epoches and the accuracy is 97% on test data. 
 
-<img src="https://i.imgur.com/O8ntGzS.png" width=50% height=50%>
+<img src="https://i.imgur.com/O8ntGzS.png">
+
+
 
 
 
