@@ -1,0 +1,109 @@
+
+body {
+    background-image: url('/static/css/background_image_1.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    align-items: center;
+    color: black;
+    font-family: serif;
+    font-size: large;
+    backdrop-filter: blur(6px); 
+}
+
+h1{
+    font-size: 2.8em;
+    font-weight: 800;
+    text-align: center;
+    padding: 20px;
+}
+.warpper {
+    width: 100%;
+    height: 30vh;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.4);   
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+  }
+  
+.warpper:before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    filter: blur(10px);
+    margin: -20px;
+}
+.warpperbottom {
+    width: 100%;
+    height: 60vh;
+    box-shadow: 0 0 3rem 0 rgba(0, 0, 0, .2);   
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+    
+  }
+  
+.warpperbottom:before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 3000px rgba(255, 255, 255, .5);
+    filter: blur(10px);
+    
+}
+/*---------------------------------------------------------------*/
+.btn-file {
+    position: relative;
+    overflow: hidden;
+    
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 100px;
+    text-align: center;
+    filter: alpha(opacity=3);
+    opacity: 0.2;
+    cursor: inherit;
+    display: flex;
+    margin: 20px;
+}
+.form-control{
+    margin: 20px;
+}
+#img-upload{
+    padding: 20px 0px 20px 20px;
+    width: 25%;
+    margin: 20px;
+    float: left;
+}
+#PredBtn{
+    margin: 20px;
+}
+.predclass{
+    padding: 20px;
+    padding-top: 40px;
+    float: right;
+}
+.input-group-btn{
+    margin-top: 20px ;
+}
+
+

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Cotton Disease Classifier</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+        <link href="../static/css/main.css" rel="stylesheet"> 
+        
+
+    </head>
+    <body>  
+        
+        <section id="Top">
+            
+            <div class="warpper">
+                <h1>Cotton Plant Disease Classifier</h1>
+                <p class="text-center font-weight-normal mt-4 mb-3"><b>Cotton Plant Disease Classifier can classify two diseases: 
+                    Fusarium Wilt and Leaf Curl Disease, two healthy classes: Healthy Plant and Healthy Leaf.<br>
+                    Trained model : DenseNet121, Accuracy : 97%</b>
+                </p>        
+                
+            </div>
+
+            
+            <div class="d-flex justify-content-center">
+                    <div class="form-group col-md-6">
+                        <form id="upload-file" method="post" enctype="multipart/form-data" class="input-group">
+                            <input type="text" class="form-control" readonly>
+                            <span class="input-group-btn">
+                                <span class="btn btn-dark btn-file">
+                                    Upload Image <input type="file" name="file" id="imgInp" accept=".png, .jpg, .jpeg" >
+                                </span>
+                                <button type="button" class="btn btn-dark" id="btn-predict">Predict</button>
+                            </span>  
+                                     
+                        </form>   
+                    </div>     
+            
+            </div>       
+            
+            </div>
+        </section>
+        <section id="Bottom">
+            <div class="warpperbottom">
+
+                
+                <img id='img-upload' class="col-md-6"/>
+                
+                <div class="predclass col-md-8">
+                    <h2><b class="result"> </b></h2>
+                    <div class="Fusarium"> <b>
+                        <p> Fusarium Wilt (caused by the soilborne fungus Fusarium oxysporum) is a widespread and economically important disease.</p>
+                        <h2> Prevention and control </h2>
+                        <ul> 
+                            <li>Once Fusarium Wilt is infected, there is no effective treatment.</li>
+                            <li>Remove and dispose effected plant immediately. </li>
+                            <li>Remove and replace fusarium-infected garden soil.</li>
+                            <li>Fungus populations can be reduced by soil solarization and fumigation.</li>
+                            <li>The use of resistant cultivars and pathogen-free cotton seed are good preventions of disease.</li>
+                        </ul></b>
+                    </div>
+                    <div class="Curl"> 
+                        <b>
+                        <p>Cotton leaf curl disease (CLCuD) is a viral infection of cotton and other susceptible host plants that is transmitted by silverleaf whitefly (Bemisia tabaci).</p>
+                        <h2> Prevention and control </h2>
+                        <ul>
+                            <li>Immediately remove infected-looking plants and bury them.</li>
+                            <li>Protect seedlings from whiteflies and control weed.</li>
+                            <li>Use resistant or tolerant cultivars.</li>
+                        </ul>
+                        </b>
+                    </div>
+                    <div class="HPlant"> 
+                        <b>Your Cotton Plant is Healthy.</b>
+                    </div>
+                    <div class="HLeaf"> 
+                        <b>Your Cotton Leaf is Healthy.</b>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+            
+        
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="../static/js/main.js" type="text/javascript"></script>
+    </body>
+</html>
