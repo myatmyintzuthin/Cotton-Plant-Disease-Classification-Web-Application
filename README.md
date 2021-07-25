@@ -1,1 +1,1 @@
-# Cotton Plant Disease Classification Web Application :leaves:
+# Cotton Plant Disease Classification Web Application :herb:
