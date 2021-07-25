@@ -12,7 +12,11 @@ Pretrained DenseNet121 model on ImageNet dataset is used. With the help of trans
 
 <img src="https://i.imgur.com/O8ntGzS.png">
 
+# Training Accuracy and Loss
+<img src="https://github.com/myatmyintzuthin/Cotton-Plant-Disease-Classification-Web-Application/blob/main/assets/DenseNet121_plot.png" width=50% height=50%>
 
+# Confusion Matrix
+<img src="https://github.com/myatmyintzuthin/Cotton-Plant-Disease-Classification-Web-Application/blob/main/assets/DenseNetConfusionMatrix.png" width=50% height=50%>
 
 
 
