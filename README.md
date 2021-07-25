@@ -3,8 +3,8 @@ This repository is about an end to end implemetation of deep learning cotton pla
 
 # Dataset
 The dataset is downloaded from [Kaggle](https://www.kaggle.com/janmejaybhoi/cotton-disease-dataset)
-Here are the sample images from dataset...
-![](assets/SampleImagesfromDataset.png=100x100)
+-Here are the sample images from dataset...
+![](assets/SampleImagesfromDataset.png =250x)
 
 
 
