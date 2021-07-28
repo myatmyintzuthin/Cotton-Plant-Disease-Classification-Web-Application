@@ -27,3 +27,5 @@ Pretrained DenseNet121 model on ImageNet dataset is used. With the help of trans
 - To run Flask app, just run [app.py](https://github.com/myatmyintzuthin/Cotton-Plant-Disease-Classification-Web-Application/blob/main/app.py).
 - Please make sure that you did not change any folder name in this repo.
 
+## Credits
+Thank you, my teammates [Sakshi](https://github.com/Sakshi053) and [Prachi Gupta](https://github.com/Prachigupta0305) :heart:
