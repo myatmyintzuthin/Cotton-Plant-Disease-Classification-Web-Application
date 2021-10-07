@@ -22,10 +22,10 @@ Pretrained DenseNet121 model on ImageNet dataset is used. With the help of trans
 <img src="https://github.com/myatmyintzuthin/Cotton-Plant-Disease-Classification-Web-Application/blob/main/assets/WebApplicationSample.png"  width=70% height=70%>
 
 ## Usage
-- For model implementation and training, please run [densenet121cottondisease.ipynb](https://github.com/myatmyintzuthin/Cotton-Plant-Disease-Classification-Web-Application/blob/main/densenet121cottondisease.ipynb).
+- For model implementation and training, run [densenet121cottondisease.ipynb](https://github.com/myatmyintzuthin/Cotton-Plant-Disease-Classification-Web-Application/blob/main/densenet121cottondisease.ipynb).
 - You can also directly download [DenseNet121.h5](https://github.com/myatmyintzuthin/Cotton-Plant-Disease-Classification-Web-Application/blob/master/DenseNet121.h5) without running the notebook.
-- To run Flask app, just run [app.py](https://github.com/myatmyintzuthin/Cotton-Plant-Disease-Classification-Web-Application/blob/main/app.py).
-- Please make sure that you did not change any folder name in this repo.
+- To run Flask app, run [app.py](https://github.com/myatmyintzuthin/Cotton-Plant-Disease-Classification-Web-Application/blob/main/app.py).
+- Make sure that you did not change any folder name in this repo.
 
 ## Credits
-Thanks to my teammates [Sakshi](https://github.com/Sakshi053) and [Prachi Gupta](https://github.com/Prachigupta0305) :heart:
+Thanks to my teammates [Sakshi](https://github.com/Sakshi053) and [Prachi Gupta](https://github.com/Prachigupta0305)
