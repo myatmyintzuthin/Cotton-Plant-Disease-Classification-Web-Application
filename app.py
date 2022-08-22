@@ -13,7 +13,7 @@ from werkzeug.utils import secure_filename
 
 
 #load model
-model =load_model("DenseNet121.h5")
+model =load_model("model/DenseNet121.h5")
 
 print('************Model loaded*************')
 
@@ -68,4 +68,4 @@ def upload():
 
 
 if __name__ == '__main__':
-    app.run(port=5001,debug=True)
+    app.run(host="0.0.0.0", port=80)

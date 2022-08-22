@@ -2,10 +2,24 @@
 This repository is about an end to end implemetation of deep learning cotton plant disease classification web application using flask. 
 
 ## Dataset
-The dataset is downloaded from [Kaggle](https://www.kaggle.com/janmejaybhoi/cotton-disease-dataset). and total size is 152 MB. The dataset contains 3 folders with 1951 train images, 106 test images and 253 validation images. Each folder is divided into four classes: diseased cotton plant (Fusarium Wilt), diseased cotton leaf (Leaf Curl Disease), fresh cotton plant (Healthy Plant) and fresh cotton leaf (Healthy Leaf). Each image has a size of 694x694 pixels in JPG format.
-Here are the sample images of the dataset...  
+The dataset is downloaded from [Kaggle](https://www.kaggle.com/janmejaybhoi/cotton-disease-dataset). 
 
-<img src="https://github.com/myatmyintzuthin/Cotton-Plant-Disease-Classification-Web-Application/blob/main/assets/SampleImagesfromDataset.png" width=50% height=50%>
+- total size - 152 MB. 
+- train      - 1951 images
+- validation - 253 images 
+- test       - 160 images 
+
+## Classes
+- diseased cotton plant (Fusarium Wilt)
+- diseased cotton leaf (Leaf Curl Disease)
+- fresh cotton plant (Healthy Plant)
+- fresh cotton leaf (Healthy Leaf). 
+
+Image resolution - 694x694 pixels \
+Image format - JPG format
+## sample images of the dataset  
+
+<img src="assets/SampleImagesfromDataset.png" width=50% height=50%>
 
 ## DenseNet Model
 Pretrained DenseNet121 model on ImageNet dataset is used. With the help of transfer learning, the last 8 layers of the model are tuned to solve the problem. The model is trained for 20 epoches and the accuracy is 97% on test data. 
@@ -13,19 +27,51 @@ Pretrained DenseNet121 model on ImageNet dataset is used. With the help of trans
 <img src="https://i.imgur.com/O8ntGzS.png">
 
 ## Training Accuracy and Loss
-<img src="https://github.com/myatmyintzuthin/Cotton-Plant-Disease-Classification-Web-Application/blob/main/assets/DenseNet121_plot.png">
+<img src="assets/DenseNet121_plot.png">
 
 ## Confusion Matrix
-<img src="https://github.com/myatmyintzuthin/Cotton-Plant-Disease-Classification-Web-Application/blob/main/assets/DenseNetConfusionMatrix.png" width=50% height=50%>
+<img src="assets/DenseNetConfusionMatrix.png" width=50% height=50%>
 
 ## Demo
-<img src="https://github.com/myatmyintzuthin/Cotton-Plant-Disease-Classification-Web-Application/blob/main/assets/WebApplicationSample.png"  width=70% height=70%>
+<img src="assets/WebApplicationSample.png"  width=70% height=70%>
 
 ## Usage
-- For model implementation and training, run [densenet121cottondisease.ipynb](https://github.com/myatmyintzuthin/Cotton-Plant-Disease-Classification-Web-Application/blob/main/densenet121cottondisease.ipynb).
-- You can also directly download [DenseNet121.h5](https://github.com/myatmyintzuthin/Cotton-Plant-Disease-Classification-Web-Application/blob/master/DenseNet121.h5) without running the notebook.
-- To run Flask app, run [app.py](https://github.com/myatmyintzuthin/Cotton-Plant-Disease-Classification-Web-Application/blob/main/app.py).
-- Make sure that you did not change any folder name in this repo.
 
-## Credits
-Thanks to my teammates [Sakshi](https://github.com/Sakshi053) and [Prachi Gupta](https://github.com/Prachigupta0305)
+### Install dependencies
+```
+pip install -r requirements.txt
+```
+
+### Training
+For model implementation and training, run  
+```
+densenet121cottondisease.ipynb
+```
+
+### Inference
+
+Download model weight -  [DenseNet121.h5](https://github.com/myatmyintzuthin/Cotton-Plant-Disease-Classification-Web-Application/blob/master/DenseNet121.h5) and store inside `/model` folder.
+
+For running Flask app,run:
+```
+python app.py
+```
+
+## Docker
+To build docker image, run:
+```
+docker build -t cotton .
+```
+
+To run docker image, run:
+```
+docker run --name cotton-app -p 80:80 cotton
+``` 
+
+To stop docker:
+```
+docker stop cotton-app
+```
+## Contributors
+- Sakshi ([@GitHub Sakshi053](https://github.com/Sakshi053))
+- Prachi Gupta ([@GitHub Prachigupta0305](https://github.com/Prachigupta0305))
