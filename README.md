@@ -65,7 +65,7 @@ docker build -t cotton .
 
 To run docker image, run:
 ```
-docker run --name cotton-app -p 80:80 cotton
+docker run --name cotton-app cotton
 ``` 
 
 To stop docker:
